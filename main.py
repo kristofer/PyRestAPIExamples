@@ -13,7 +13,6 @@ Example POST request JSON:
 }
 """
 
-from datetime import datetime
 from typing import Optional, Dict
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
@@ -42,7 +41,7 @@ app = FastAPI(
 
 
 @app.on_event("startup")
-async def load_initial_data():
+def load_initial_data():
     """Load initial authors into the in-memory database at startup."""
     initial_authors = [
         Author(
