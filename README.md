@@ -85,6 +85,82 @@ Each author has the following fields:
 - `first_published_date` (string): Date of first published book
 - `death_date` (string, optional): Death date if applicable
 
+## Testing Examples
+
+Here are comprehensive curl examples to test the API:
+
+### 1. Check API Root
+```bash
+curl http://localhost:8000/
+```
+
+### 2. Get All Authors
+```bash
+curl http://localhost:8000/authors
+```
+
+### 3. Get Specific Author (Tolkien)
+```bash
+curl http://localhost:8000/author/1
+```
+
+### 4. Get Another Author (Hemingway)
+```bash
+curl http://localhost:8000/author/2
+```
+
+### 5. Create a New Author (George Orwell)
+```bash
+curl -X POST http://localhost:8000/author \
+  -H "Content-Type: application/json" \
+  -d '{
+    "id": 7,
+    "name": "George Orwell",
+    "birth_year": 1903,
+    "country_of_birth": "India",
+    "first_published_date": "1933",
+    "death_date": "1950"
+  }'
+```
+
+### 6. Create Another Author (Virginia Woolf)
+```bash
+curl -X POST http://localhost:8000/author \
+  -H "Content-Type: application/json" \
+  -d '{
+    "id": 8,
+    "name": "Virginia Woolf",
+    "birth_year": 1882,
+    "country_of_birth": "United Kingdom",
+    "first_published_date": "1915",
+    "death_date": "1941"
+  }'
+```
+
+### 7. Test Error - Get Non-existent Author
+```bash
+curl http://localhost:8000/author/999
+```
+
+### 8. Test Error - Create Duplicate ID
+```bash
+curl -X POST http://localhost:8000/author \
+  -H "Content-Type: application/json" \
+  -d '{
+    "id": 1,
+    "name": "Test Author",
+    "birth_year": 2000,
+    "country_of_birth": "Test",
+    "first_published_date": "2020",
+    "death_date": null
+  }'
+```
+
+### 9. Verify New Author Was Created
+```bash
+curl http://localhost:8000/author/7
+```
+
 ## Interactive API Documentation
 
 FastAPI automatically generates interactive API documentation:
