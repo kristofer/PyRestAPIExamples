@@ -4,6 +4,15 @@ A simple FastAPI REST API server example. NO Database. Just a dictionary in memo
 ## Description
 This is a simple REST API for managing author information using FastAPI. The data is stored in-memory using a Python dictionary and is loaded at startup with six famous authors.
 
+This also show how to create a virtual environment for python. 
+PLUS, it gives you the chance to run the fastapi server in one vscode terminal and the `curl` client testing in a second terminal!!
+
+_(just add a second terminal and click between them!)_
+<img width="957" height="326" alt="image" src="https://github.com/user-attachments/assets/1e4c0600-6419-4c68-a203-658903340667" />
+
+_(see the plys sign, to create another terminal!)_
+<img width="171" height="90" alt="image" src="https://github.com/user-attachments/assets/05005a6a-a70f-4e6e-bfd5-c74ba76c4826" />
+
 ## Installation
 
 1. Clone the repository:
