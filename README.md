@@ -193,4 +193,4 @@ curl http://localhost:8000/author/7
 
 FastAPI automatically generates interactive API documentation:
 - Swagger UI: http://localhost:8000/docs
-- ReDoc: http://localhost:8000/redoc
+_(you can use the `/docs` page of fastapi to run REST API test urls too!)_
