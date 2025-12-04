@@ -103,29 +103,6 @@ classDiagram
     }
 ```
 
-## Jasmine Bowers
-
-2022 Collection!
-
-
-```mermaid
-classDiagram
-    class Look {
-        +int id
-        +string name
-        +string season
-        +string description
-        +datetime? created
-    }
-
-    class Garment {
-        +int id
-        +string name
-        +string colors
-        +string category
-        +string? notes
-    }
-```
 
 ## Testing Examples
 
