@@ -14,8 +14,10 @@ cd PyRestAPIExamples
 
 2. Create venv & Install dependencies:
 ```bash
-python3 -m venv venv
-./venv/bin/activate
+# you may have to install python 3.13
+# use `brew install python@3.13`
+python3.13 -m venv venv
+source ./venv/bin/activate
 pip install -r requirements.txt
 ```
 
