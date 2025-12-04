@@ -10,7 +10,7 @@ PLUS, it gives you the chance to run the fastapi server in one vscode terminal a
 _(just add a second terminal and click between them!)_
 <img width="957" height="326" alt="image" src="https://github.com/user-attachments/assets/1e4c0600-6419-4c68-a203-658903340667" />
 
-_(see the plys sign, to create another terminal!)_
+_(see the plus `+` sign, to create another terminal!)_
 <img width="171" height="90" alt="image" src="https://github.com/user-attachments/assets/05005a6a-a70f-4e6e-bfd5-c74ba76c4826" />
 
 ## Installation
