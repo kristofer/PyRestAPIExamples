@@ -12,8 +12,10 @@ git clone https://github.com/kristofer/PyRestAPIExamples.git
 cd PyRestAPIExamples
 ```
 
-2. Install dependencies:
+2. Create venv & Install dependencies:
 ```bash
+python3 -m venv venv
+./venv/bin/activate
 pip install -r requirements.txt
 ```
 
