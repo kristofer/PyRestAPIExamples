@@ -87,6 +87,20 @@ Each author has the following fields:
 - `first_published_date` (string): Date of first published book
 - `death_date` (string, optional): Death date if applicable
 
+### Class Diagram
+
+```mermaid
+classDiagram
+    class Author {
+        +int id
+        +string name
+        +int birth_year
+        +string country_of_birth
+        +string first_published_date
+        +string? death_date
+    }
+```
+
 ## Testing Examples
 
 Here are comprehensive curl examples to test the API:
